@@ -1,0 +1,10 @@
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--cor-card-fundo);
+  border-bottom: 1px solid var(--cor-borda);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}

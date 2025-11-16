@@ -1,0 +1,35 @@
+/* src/styles.scss */
+
+/* 1. Cores do Tema Claro (Padrão) */
+:root {
+  --cor-fundo: #f4f4f4;
+  --cor-texto: #222;
+  --cor-card-fundo: #ffffff;
+  --cor-borda: #ddd;
+  --cor-botao-delete: #e63946;
+  --cor-texto-concluido: #888;
+}
+
+/* 2. Cores do Tema Escuro (quando o body tiver a classe .dark-theme) */
+body.dark-theme {
+  --cor-fundo: #2c2c2c;
+  --cor-texto: #f4f4f4;
+  --cor-card-fundo: #404040;
+  --cor-borda: #555;
+  --cor-botao-delete: #ff6b6b;
+  --cor-texto-concluido: #aaa;
+}
+
+/* 3. Aplicar as variáveis e a transição */
+body {
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Um reset básico para margem */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}

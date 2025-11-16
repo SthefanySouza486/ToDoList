@@ -1,0 +1,11 @@
+<header class="app-header">
+  <h1>Minha Lista de Tarefas</h1>
+
+  <button (click)="toggleTheme()">
+    Mudar para Tema {{ isDarkMode ? 'Claro' : 'Escuro' }}
+  </button>
+</header>
+
+<app-task-list></app-task-list>
+<app-footer></app-footer>
+<router-outlet></router-outlet>

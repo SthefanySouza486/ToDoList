@@ -1,0 +1,32 @@
+<div class="task-container">
+
+  <div class="task-add-form">
+    <input
+      type="text"
+      placeholder="Digite uma nova tarefa..."
+      [(ngModel)]="newTaskDescription"
+      (keyup.enter)="addTask()"
+    >
+    <button (click)="addTask()">Adicionar</button>
+  </div>
+
+  <ul class="task-list">
+
+    <li *ngFor="let task of tasks">
+
+      <span [class.completed]="task.completo">
+
+        <input
+          type="checkbox"
+          [checked]="task.completo"
+          (change)="toggleTaskCompletion(task)"
+        >
+
+        {{ task.descricao }}
+      </span>
+
+      <button class="delete-btn" (click)="deleteTask(task.id)">Excluir</button>
+    </li>
+  </ul>
+
+</div>
