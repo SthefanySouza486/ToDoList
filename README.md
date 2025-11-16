@@ -18,7 +18,7 @@ Você precisará do Java (JDK 17+) e do Node.js (v18+) instalados.
 
 ```bash
 # Clone o repositório
-git clone [URL_DO_SEU_REPOSITORIO.git]
+git clone https://github.com/SthefanySouza486/ToDoList.git
 ```
 ```bash
 # Entre na pasta do backend
@@ -28,3 +28,31 @@ cd backend
 # Execute o projeto
 ./mvnw spring-boot:run
 ```
+
+### 2. Frontend (Angular)
+
+```bash
+# (Em outro terminal)
+# Entre na pasta do frontend
+cd frontend
+```
+```bash
+# Instale as dependências (apenas na primeira vez)
+npm install
+```
+```bash
+# Execute o projeto
+ng serve
+```
+
+✨ Funcionalidades
+- Listar tarefas
+
+- Adicionar novas tarefas
+
+- Marcar tarefas como concluídas
+
+- Excluir tarefas
+
+- Tema Dark/Light
+
